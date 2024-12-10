@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/search.css">
+    <title>Единая система здравоохранения | Страница учрежждения</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="/imgs/logo.png" alt="" onclick="location.href='index.htm'"></div>
+        <ul>
+            <li><a href="./index.htm">Главная</a></li>
+            <li><a href="./search.htm">Учреждения и запись</a></li>
+            <li><a href="">О ресурсе</a></li>
+        </ul>
+        <div id="user" onclick="location.href='./acc.htm'"><img src="/imgs/user.png" alt=""></div>
+        <button id="signin" onclick="location.href='signin.htm'">Войти</button>
+    </header>
+    <div id="accountHead">
+        <img src="/imgs/None.png" alt="">
+        <div id="biginfo">
+            <p>Государственное бюджетное учреждение здравоохранения Детская областная клиническая больница г. Тверь</p>
+            <p>Сокращение: ГБУЗ ДОКБ</p>
+            <div id="info">
+            <div id="catagolry">
+                <h3>Адрес:</h3>
+                <h3>Телефон:</h3>
+                <h3>E-mail:</h3>
+            </div>
+            <div id="val">
+                <h4>Россия, 170001, г. Тверь, наб. Степана Разина, д.23</h4>
+                <h4><a href="tel:+74822500500">+7 (4822) 500-500</a></h4>
+                <h4><a href="mailto:">guz_dokb@mail.ru</a></h4>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%; text-align: center; margin-bottom: 20px;">
+    <button style="margin: auto;" onclick="location.href = './record.htm'">Запись на приём</button>
+    </div>
+    <h2 style="text-align: center;">Услуги и отделения</h2>
+    <div id="departments">
+        <ol>
+            <li>Первичная медико-санитарная помощь</li>
+            <li>Специализированная помощь</li>
+            <li>Паллиативная медицинская помощь</li>
+        </ol>
+        <ol>
+            <li>Педиатрическое отделение</li>
+            <li>Неврологическое отделение</li>
+            <li>1-е хирургическое отделение</li>
+            <li>Отделение гнойной хирургии</li>
+            <li>Травматолого-ортопедическое  отделение</li>
+            <li>Урологическое отделение</li>
+            <li>Инфекционное отделение</li>
+            <li>Нейрохирургическое отделение</li>
+            <li>Отделение анестезиологии-реанимации №1 для новорождённых детей</li>
+            <li>Отделение анестезиологии-реанимации №2 для детей старшего возраста</li>
+            <li>Отделение паллиативной медицинской помощи</li>
+        </ol>
+    </div>
+    <h2 style="text-align: center;margin-bottom: 10px;">Врачи-специалисты</h2>
+    <div class="specialists">
+        <div class="specialist" onclick="location.href='./accOfDoc.htm'">
+            <img src="/imgs/user.png" alt="" >
+            <h2>Иванов Иван Иванович</h2>
+            <p>Невролог</p>
+        </div>
+    </div>
+</body>
+</html>

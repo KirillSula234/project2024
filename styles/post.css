@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+h3:hover {
+    color: rgb(94, 2, 2);
+}
+
+h3:active {
+    color: #717171;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 25px;
+}

@@ -1,0 +1,29 @@
+.sections {
+    display: grid;
+    justify-content: center;
+    margin-right: 29%;
+}
+
+.sections ul li {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 36px;
+    font-weight: bold;
+    background: rgba(20, 20, 255, 0.5);
+    margin-bottom: 5px;
+    min-width: 300%;
+}
+
+.sections ul {
+    min-width: 80%;
+}
+
+.sections ul li:hover {
+    background: rgba(115, 115, 255, 0.5);
+}
+
+.sections ul li:active {
+    background: rgba(38, 38, 87, 0.5);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/accOfDoc.css">
+    <link rel="stylesheet" href="/styles/acc.css">
+    <title>Единая система здравоохранения | Личный кабинет</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="/imgs/logo.png" alt="" onclick="location.href='index.htm'"></div>
+        <ul>
+            <li><a href="./index.htm">Главная</a></li>
+            <li><a href="./search.htm">Учреждения и запись</a></li>
+            <li><a href="">О ресурсе</a></li>
+        </ul>
+        <div id="user" onclick="location.href='./acc.htm'"><img src="/imgs/user.png" alt=""></div>
+        <button id="signin" onclick="location.href='signin.htm'">Войти</button>
+    </header>
+    <div id="accountHead">
+        <img src="/imgs/None.png" alt="">
+        <div id="biginfo">
+            <h2>Иванов Иван Иванович</h2>
+            <div id="info" style="margin-top: 25px;">
+                <div id="catagolry">
+                    <p><strong>Полис ОМС: </strong></p>
+                </div>
+                <div id="val">
+                    <p>*номер*</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sections">
+        <ul>
+            <li onclick="location.href = './records.htm'"><div>Записи к врачу</div> <div>></div></li>
+            <li onclick="location.href = './documents.htm'"><div>Справки </div> <div>></div></li>
+            <li onclick="location.href = './documents.htm'"><div>Рецепты </div> <div>></div></li>
+            <li onclick="location.href = './documents.htm'"><div>Направления </div> <div>></div></li>
+            <li onclick="location.href = './documents.htm'"><div>Эпикризы/Выписки </div> <div>></div></li>
+            <li onclick="location.href = './documents.htm'"><div>Иные документы </div> <div>></div></li>
+        </ul>
+    </div>
+</body>
+</html>

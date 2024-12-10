@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/search.css">
+    <title>Единая система здравоохранения | Поиск учреждения</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="/imgs/logo.png" alt="" onclick="location.href='index.htm'"></div>
+        <ul>
+            <li><a href="./index.htm">Главная</a></li>
+            <li><a href="./search.htm">Учреждения и запись</a></li>
+            <li><a href="">О ресурсе</a></li>
+        </ul>
+        <div id="user" onclick="location.href='./acc.htm'"><img src="/imgs/user.png" alt=""></div>
+        <button id="signin" onclick="location.href='signin.htm'">Войти</button>
+    </header>
+    <div id="formSearch">
+        <div>
+            <h2 style="text-align: center;">Поиск учреждения</h2>
+            <label for="name">Название</label>
+            <input type="text" name="name">
+            <label for="region">Регион</label>
+            <input type="text" name="region">
+            <label for="location">Населённый пункт</label>
+            <input type="text" name="location">
+            <button>Найти</button>
+        </div>
+    </div>
+    <h1>Предложения и результаты поиска</h1>
+    <div class="cardsOfAmb">
+        <div class="cardOfAmb" onclick="location.href = 'accountOfAmb.htm'">
+            <h2 style="text-align: center;">ГБУЗ ДОКБ г. Тверь</h2>
+            <div id="info">
+                <div id="catagolry">
+                    <h3>Полное наименование:</h3>
+                    <h3>Адрес:</h3>
+                    <h3>Телефон:</h3>
+                    <h3>E-mail:</h3>
+                </div>
+                <div id="val">
+                    <h4>Государственное бюджетное учреждение здравоохранения "Детская областная клиническая больница" г. Тверь</h4>
+                    <h4>Россия, 170001, г. Тверь, наб. Степана Разина, д.23</h4>
+                    <h4><a href="tel:+74822500500">+7 (4822) 500-500</a></h4>
+                    <h4><a href="mailto:">guz_dokb@mail.ru</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

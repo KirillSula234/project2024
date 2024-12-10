@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/record.css">
+        <!-- Reset CSS -->
+    
+<!-- Font Awesome CSS  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />  
+    <link rel="stylesheet" href="/styles/calendar.css">
+    <title>Единая система здравоохранения | Запись к врачу</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="/imgs/logo.png" alt="" onclick="location.href='index.htm'"></div>
+        <ul>
+            <li><a href="./index.htm">Главная</a></li>
+            <li><a href="./search.htm">Учреждения и запись</a></li>
+            <li><a href="">О ресурсе</a></li>
+        </ul>
+        <div id="user" onclick="location.href='./acc.htm'"><img src="/imgs/user.png" alt=""></div>
+        <button id="signin" onclick="location.href='signin.htm'">Войти</button>
+    </header>
+    <div class="main">
+        <h2>Запись на приём к врачу</h2>
+        <div class="information1" id="info1">
+            <div>
+                <h2>Учреждение</h2>
+                <h2>Направление</h2>
+                <h2>Врач</h2>
+            </div>
+            <div>
+                <input type="text" id="guz">
+                <input type="text" id="section">
+                <input type="text" id="doc">
+            </div>
+        </div>
+        <div class="information2" id="info2">
+            <h2>Вы прописаны в регионе выбранного учреждения?</h2>
+            <div class="form_toggle">
+                <div class="form_toggle-item item-1">
+                    <input id="fid-1" type="radio" name="radio" value="off" checked>
+                    <label for="fid-1">Нет</label>
+                </div>
+                <div class="form_toggle-item item-2">
+                    <input id="fid-2" type="radio" name="radio" value="on">
+                    <label for="fid-2">Да</label>
+                </div>
+            </div>
+        </div>
+        <div class="calendar-wrapper" style="display: none;" id="cal">
+            <h3>Выберите дату: доступно - зеленый, недоступно - красный.</h3>
+            <button id="btnPrev" type="button">Предыдущий</button>
+            <button id="btnNext" type="button">Следующий</button>
+        <div id="divCal"></div>
+        <div id="time">
+            <h3>Выберите время:</h3>
+            <select name="time" id="selTime">
+                <option selected="selected">Выберите время</option>
+                <option>8:00</option>
+                <option>8:30</option>
+                <option>9:00</option>
+                <option>9:30</option>
+            </select>
+        </div>
+        </div>
+        <div id="finalInfo" style="display: none;">
+            <div>
+                <h2>Учреждение:</h2>
+                <h2>Направление:</h2>
+                <h2>Врач:</h2>
+                <h2>Дата:</h2>
+                <h2>Время:</h2>
+            </div>
+            <div id="vals">
+                
+            </div>
+        </div>
+        <button id="nextBtnForm" onclick="NONE(this)">Далее</button>
+        <button id="Prev" style="display: none;" onclick="prevRec(this)">Назад</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
